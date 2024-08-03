@@ -1,0 +1,18 @@
+.content {
+
+    h1 {
+        margin-top: 55px;
+        text-align: start;
+    }
+
+    h2 {
+        text-align: end;
+    }
+
+}
+
+
+img {
+    width: 100%;
+    aspect-ratio: 300/200;
+}

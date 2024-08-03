@@ -1,0 +1,83 @@
+<br><br>
+<section class="container mb-5" style="">
+    <h5 class="text-center">Contact</h5>
+    <form [formGroup]="contactForm" class="row g-3" (submit)="enviar($event)">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" formControlName="email"
+                placeholder="name@example.com"
+                [ngClass]="{'is-invalid' : hasErrors('email', 'required') || hasErrors('email', 'email')}">
+            @if (hasErrors('email', 'required')) {
+            <span class="text-danger">You have to complete this field</span>
+
+            }
+            @if (hasErrors('email', 'email')) {
+            <span class="text-danger">Invalid email format</span>
+            }
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="message"
+                [ngClass]="{'is-invalid' : hasErrors('message', 'required') || hasErrors('message', 'minlength')}"></textarea>
+            @if (hasErrors('message', 'required')) {
+            <span class="text-danger">You have to complete this field</span>
+            }
+            @if (hasErrors('message', 'minlength')) {
+            <span class="text-danger">You have to write at least 10 characters</span>
+            }
+        </div>
+        <div class="col-12">
+            <button class="btn btn-secondary w-100 " type="submit">
+                Submit
+            </button>
+        </div>
+    </form>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+<section class="" style="background: url('/assets/name.webp'); height: 300px; opacity: 0.8; color: aliceblue; align-content: center;">
+
+    <h4 class="text-center mb-4" style="font-size: 40px; background: #000;">Start today to get more exposure and grow your business</h4>
+    <div style="display: flex; justify-content: center; gap: 20px;">
+        <button class="btn btn-outline-info">Add Listing</button>
+        <button class="btn btn-dark">Browser Listing</button>
+    </div>
+    <div>
+
+    </div>
+
+</section>
+<footer class="text-white" style="background: #565f64;">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+
+
+            <span class="col">Join the millions who by and sell from each other everyday in local communities around the
+                world!</span>
+            <span class="">
+                <h6>Sites Page</h6>
+                <p>My ads</p>
+                <p>Favorite ads</p>
+                <p>Archived ads</p>
+                <p>Pending ads</p>
+            </span>
+            <span>
+                <h6>Category</h6>
+                <p>Single Page</p>
+                <p>Store Single</p>
+                <p>Single Post</p>
+                <p>Blog</p>
+            </span>
+            <span>
+                ⚡⚡🔱🛒
+            </span>
+
+        </div>
+    </div>
+
+</footer>

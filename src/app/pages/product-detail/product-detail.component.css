@@ -1,0 +1,127 @@
+.container {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    position: relative;
+    width: 380px;
+    background: #fafafa;
+    box-shadow: 0 2px 7px #dfdfdf;
+    font-family: 'Reboto', sans-serif;
+
+
+}
+
+
+.badge {
+    position: absolute;
+    background: red;
+    color: #fff;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 3px 10px;
+}
+
+
+.thumb {
+    height: 300px;
+    background: #f0f0f0;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+
+}
+
+.details {
+    padding: 30px;
+}
+
+.category {
+    display: block;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+h4 b {
+    font-weight: 500;
+    color: #363636;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+
+h4 b:hover {
+    color: #fbb72c;
+}
+
+p {
+    color: #999;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+
+.bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-details {
+}
+
+.price {
+    color: #fbb72c;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.links {
+    text-align: right;
+}
+
+.links b {
+    color: #e1e1e1;
+    margin-left: 5px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    font-size: 17px;
+
+    &:hover {
+        color: #fbb72c;
+    }
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 414/460;
+}

@@ -1,0 +1,40 @@
+<br><br>
+<div class="container">
+    @if(loading){
+    <h5>Loading...</h5>
+    }
+    @if (!loading) {
+    <div class="card">
+        <div class="badge">Hot</div>
+        <div class="thumb">
+            <img src="{{product?.image}}" class="image" alt="{{product?.title}}">
+        </div>
+        <div class="details">
+            <span class="category">Article</span>
+            <h4>
+                <b>
+                    {{product?.price| currency}}
+                </b>
+            </h4>
+            <p>{{product?.description}}</p>
+            <h5>{{product?.title}}</h5>
+            <div class="bottom-details">
+                <div class="price">
+                    <small>
+                        {{product?.price| currency}}
+                    </small>
+                    {{product?.price| currency}}
+                </div>
+                <div class="links">
+                    <b>
+                        <fa-icon [icon]="faHeart"></fa-icon>
+                    </b>
+                    <b>
+                        <fa-icon [icon]="faShoppingCart"></fa-icon>
+                    </b>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+</div>

@@ -1,0 +1,26 @@
+<br><br>
+<div class="container">
+    <div class="table-responsive">
+        <h4>This is our products</h4>
+        <table class="table">
+            <thead class="table-light">
+                <tr align="center">
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (product of productList; track $index) {
+                    <tr>
+                        <td>{{product.title}}</td>
+                        <td>{{product.price}}</td>
+                        <td>{{product.description}}</td>
+                        <td><button type="button" (click)="navegate(product.id)" class="btn btn-outline-primary">Details</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
