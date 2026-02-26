@@ -16,3 +16,7 @@ img {
     width: 100%;
     aspect-ratio: 300/200;
 }
+
+.container {
+    width: 50%;
+}

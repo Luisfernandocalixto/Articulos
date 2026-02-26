@@ -1,3 +1,29 @@
 .container {
     margin-top: 24px;
 }
+
+.showImageSection {
+    background: url('/assets/name.webp');
+    height: 300px;
+    opacity: 0.8;
+    color: aliceblue;
+    align-content: center;
+}
+
+
+.showImageSection .text-center.mb-4 {
+    font-size: 40px;
+    background: #000;
+}
+
+.showImageSection .text-center.mb-4~div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+footer {
+    background: #565f64;
+}
